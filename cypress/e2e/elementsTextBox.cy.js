@@ -14,8 +14,11 @@ it('fill the textbox',()=>{
   cy.get('[type="email"]').type('mahir@hotmail.com');
   cy.get('#currentAddress').type('currentAdress');
   cy.get('#permanentAddress').type('perminantAdress');
-  //const faker = require('faker');
- // console.log(faker.fullName());
+  cy.get('#submit').click();
+  cy.get('#name').then((name)=>{
+    expect(name).to.have.text('Name:Mahir Kocer');
+  });
+  
 })
 
 
