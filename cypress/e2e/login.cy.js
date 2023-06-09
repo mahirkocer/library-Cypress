@@ -1,5 +1,6 @@
 describe('As a user, I want to login so that I should see the main features', () => {
   beforeEach(()=>{
+    cy.clearCookies();
     cy.visit('/login.html')
   })
 
