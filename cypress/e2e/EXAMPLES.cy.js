@@ -93,7 +93,4 @@ context('with a checked task', () => {
   })
 })
 
-
-
-
 })
